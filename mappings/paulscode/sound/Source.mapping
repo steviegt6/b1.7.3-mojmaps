@@ -1,0 +1,148 @@
+CLASS paulscode/sound/Source
+	FIELD active active Z
+	FIELD attModel attModel I
+	FIELD channel channel Lpaulscode/sound/Channel;
+	FIELD codec codec Lpaulscode/sound/ICodec;
+	FIELD distanceFromListener distanceFromListener F
+	FIELD distOrRoll distOrRoll F
+	FIELD fadeInGain fadeInGain F
+	FIELD fadeInMilis fadeInMilis J
+	FIELD fadeOutGain fadeOutGain F
+	FIELD fadeOutMilis fadeOutMilis J
+	FIELD filenameURL filenameURL Lpaulscode/sound/FilenameURL;
+	FIELD gain gain F
+	FIELD GET GET Z
+	FIELD lastFadeCheck lastFadeCheck J
+	FIELD libraryType libraryType Ljava/lang/Class;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD paused paused Z
+	FIELD pitch pitch F
+	FIELD position position Lpaulscode/sound/Vector3D;
+	FIELD preLoad preLoad Z
+	FIELD priority priority Z
+	FIELD rawDataFormat rawDataFormat Ljavax/sound/sampled/AudioFormat;
+	FIELD rawDataStream rawDataStream Z
+	FIELD reverseByteOrder reverseByteOrder Z
+	FIELD SET SET Z
+	FIELD soundBuffer soundBuffer Lpaulscode/sound/SoundBuffer;
+	FIELD soundSequenceLock soundSequenceLock Ljava/lang/Object;
+	FIELD soundSequenceQueue soundSequenceQueue Ljava/util/LinkedList;
+	FIELD sourcename sourcename Ljava/lang/String;
+	FIELD sourceVolume sourceVolume F
+	FIELD stopped stopped Z
+	FIELD temporary temporary Z
+	FIELD toLoop toLoop Z
+	FIELD toPlay toPlay Z
+	FIELD toStream toStream Z
+	FIELD XXX XXX Z
+	METHOD <init> (Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+		ARG 1 rawDataFormat
+		ARG 2 priority
+		ARG 3 sourceName
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 attModel
+		ARG 8 distOrRoll
+	METHOD <init> (Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
+		ARG 1 source
+		ARG 2 soundBuffer
+	METHOD <init> (ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+		ARG 1 priority
+		ARG 2 toStream
+		ARG 3 toLoop
+		ARG 4 sourceName
+		ARG 5 filenameURL
+		ARG 6 soundBuffer
+		ARG 7 x
+		ARG 8 y
+		ARG 9 z
+		ARG 10 attModel
+		ARG 11 distOrRoll
+		ARG 12 temporary
+	METHOD activate activate ()V
+	METHOD active active ()Z
+	METHOD active active (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD changeSource changeSource (ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+		ARG 1 priority
+		ARG 2 toStream
+		ARG 3 toLoop
+		ARG 4 sourceName
+		ARG 5 file
+		ARG 6 soundBuffer
+		ARG 7 x
+		ARG 8 y
+		ARG 9 z
+		ARG 10 attModel
+		ARG 11 distOrRoll
+		ARG 12 temporary
+	METHOD checkFadeOut checkFadeOut ()Z
+	METHOD cleanup cleanup ()V
+	METHOD cull cull ()V
+	METHOD dequeueSound dequeueSound (Ljava/lang/String;)V
+		ARG 1 file
+	METHOD errorCheck errorCheck (ZLjava/lang/String;)Z
+		ARG 1 bl
+		ARG 2 string
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD fadeOut fadeOut (Lpaulscode/sound/FilenameURL;J)V
+		ARG 1 file
+		ARG 2 milliseconds
+	METHOD fadeOutIn fadeOutIn (Lpaulscode/sound/FilenameURL;JJ)V
+		ARG 1 file
+		ARG 2 outMilliseconds
+		ARG 4 inMilliseconds
+	METHOD feedRawAudioData feedRawAudioData (Lpaulscode/sound/Channel;[B)I
+		ARG 1 channel
+		ARG 2 bs
+	METHOD flush flush ()V
+	METHOD getClassName getClassName ()Ljava/lang/String;
+	METHOD getDistanceFromListener getDistanceFromListener ()F
+	METHOD getPitch getPitch ()F
+	METHOD importantMessage importantMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD incrementSoundSequence incrementSoundSequence ()Z
+	METHOD listenerMoved listenerMoved ()V
+	METHOD message message (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD pause pause ()V
+	METHOD paused paused ()Z
+	METHOD paused paused (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD play play (Lpaulscode/sound/Channel;)V
+		ARG 1 channel
+	METHOD playing playing ()Z
+	METHOD positionChanged positionChanged ()V
+	METHOD preLoad preLoad ()Z
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;)V
+		ARG 1 exception
+	METHOD queueSound queueSound (Lpaulscode/sound/FilenameURL;)V
+		ARG 1 file
+	METHOD reverseByteOrderRequired reverseByteOrderRequired ()Z
+	METHOD rewind rewind ()V
+	METHOD setAttenuation setAttenuation (I)V
+		ARG 1 val
+	METHOD setDistOrRoll setDistOrRoll (F)V
+		ARG 1 val
+	METHOD setLooping setLooping (Z)V
+		ARG 1 val
+	METHOD setPitch setPitch (F)V
+		ARG 1 val
+	METHOD setPosition setPosition (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD setPriority setPriority (Z)V
+		ARG 1 val
+	METHOD setTemporary setTemporary (Z)V
+		ARG 1 val
+	METHOD stop stop ()V
+	METHOD stopped stopped ()Z
+	METHOD stopped stopped (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD stream stream ()Z

@@ -1,0 +1,14 @@
+CLASS paulscode/sound/libraries/LibraryLWJGLOpenAL
+	FIELD ALBufferMap ALBufferMap Ljava/util/HashMap;
+	FIELD alPitchSupported alPitchSupported Z
+	FIELD GET GET Z
+	FIELD listenerOrientation listenerOrientation Ljava/nio/FloatBuffer;
+	FIELD listenerPositionAL listenerPositionAL Ljava/nio/FloatBuffer;
+	FIELD listenerVelocity listenerVelocity Ljava/nio/FloatBuffer;
+	FIELD SET SET Z
+	FIELD XXX XXX Z
+	METHOD alPitchSupported alPitchSupported ()Z
+	METHOD alPitchSupported alPitchSupported (ZZ)Z
+		ARG 0 bl
+		ARG 1 bl2
+	METHOD checkALError checkALError ()Z

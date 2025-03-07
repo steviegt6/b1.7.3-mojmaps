@@ -1,0 +1,2 @@
+CLASS com/jcraft/jorbis/Comment
+	METHOD init init ()V

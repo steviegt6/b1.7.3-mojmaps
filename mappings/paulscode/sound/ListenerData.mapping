@@ -1,0 +1,56 @@
+CLASS paulscode/sound/ListenerData
+	FIELD angle angle F
+	FIELD lookAt lookAt Lpaulscode/sound/Vector3D;
+	FIELD position position Lpaulscode/sound/Vector3D;
+	FIELD up up Lpaulscode/sound/Vector3D;
+	METHOD <init> (FFFFFFFFFF)V
+		ARG 1 f
+		ARG 2 g
+		ARG 3 h
+		ARG 4 i
+		ARG 5 j
+		ARG 6 k
+		ARG 7 l
+		ARG 8 m
+		ARG 9 n
+		ARG 10 o
+	METHOD <init> (Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;F)V
+		ARG 1 vector3D
+		ARG 2 vector3D2
+		ARG 3 vector3D3
+		ARG 4 f
+	METHOD setAngle setAngle (F)V
+		ARG 1 f
+	METHOD setData setData (FFFFFFFFFF)V
+		ARG 1 f
+		ARG 2 g
+		ARG 3 h
+		ARG 4 i
+		ARG 5 j
+		ARG 6 k
+		ARG 7 l
+		ARG 8 m
+		ARG 9 n
+		ARG 10 o
+	METHOD setData setData (Lpaulscode/sound/ListenerData;)V
+		ARG 1 listenerData
+	METHOD setData setData (Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;F)V
+		ARG 1 vector3D
+		ARG 2 vector3D2
+		ARG 3 vector3D3
+	METHOD setOrientation setOrientation (FFFFFF)V
+		ARG 1 f
+		ARG 2 g
+		ARG 3 h
+		ARG 4 i
+		ARG 5 j
+		ARG 6 k
+	METHOD setOrientation setOrientation (Lpaulscode/sound/Vector3D;Lpaulscode/sound/Vector3D;)V
+		ARG 1 vector3D
+		ARG 2 vector3D2
+	METHOD setPosition setPosition (FFF)V
+		ARG 1 f
+		ARG 2 g
+		ARG 3 h
+	METHOD setPosition setPosition (Lpaulscode/sound/Vector3D;)V
+		ARG 1 vector3D

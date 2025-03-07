@@ -1,0 +1,6 @@
+CLASS com/jcraft/jorbis/Info
+	FIELD channels channels I
+	FIELD rate rate I
+	METHOD clear clear ()V
+	METHOD init init ()V
+	METHOD synthesis_headerin synthesis_headerin (Lcom/jcraft/jorbis/Comment;Lcom/jcraft/jogg/Packet;)I

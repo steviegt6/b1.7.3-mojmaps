@@ -1,0 +1,37 @@
+CLASS paulscode/sound/Channel
+	FIELD attachedSource attachedSource Lpaulscode/sound/Source;
+	FIELD channelType channelType I
+	FIELD libraryType libraryType Ljava/lang/Class;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	METHOD <init> (I)V
+		ARG 1 i
+	METHOD buffersProcessed buffersProcessed ()I
+	METHOD cleanup cleanup ()V
+	METHOD close close ()V
+	METHOD errorCheck errorCheck (ZLjava/lang/String;)Z
+		ARG 1 bl
+		ARG 2 string
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD feedRawAudioData feedRawAudioData ([B)I
+		ARG 1 bs
+	METHOD flush flush ()V
+	METHOD getClassName getClassName ()Ljava/lang/String;
+	METHOD importantMessage importantMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD message message (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD pause pause ()V
+	METHOD play play ()V
+	METHOD playing playing ()Z
+	METHOD preLoadBuffers preLoadBuffers (Ljava/util/LinkedList;)Z
+		ARG 1 linkedList
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;)V
+		ARG 1 exception
+	METHOD processBuffer processBuffer ()Z
+	METHOD queueBuffer queueBuffer ([B)Z
+		ARG 1 bs
+	METHOD rewind rewind ()V
+	METHOD setAudioFormat setAudioFormat (Ljavax/sound/sampled/AudioFormat;)V
+		ARG 1 audioFormat
+	METHOD stop stop ()V

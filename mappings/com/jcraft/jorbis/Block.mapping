@@ -1,0 +1,4 @@
+CLASS com/jcraft/jorbis/Block
+	METHOD clear clear ()I
+	METHOD init init (Lcom/jcraft/jorbis/DspState;)V
+	METHOD synthesis synthesis (Lcom/jcraft/jogg/Packet;)I

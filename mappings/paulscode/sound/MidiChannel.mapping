@@ -1,0 +1,119 @@
+CLASS paulscode/sound/MidiChannel
+	FIELD CHANGE_VOLUME CHANGE_VOLUME I
+	FIELD END_OF_TRACK END_OF_TRACK I
+	FIELD fadeInGain fadeInGain F
+	FIELD fadeInMilis fadeInMilis J
+	FIELD fadeOutGain fadeOutGain F
+	FIELD fadeOutMilis fadeOutMilis J
+	FIELD fadeThread fadeThread Lpaulscode/sound/MidiChannel$FadeThread;
+	FIELD filenameURL filenameURL Lpaulscode/sound/FilenameURL;
+	FIELD gain gain F
+	FIELD GET GET Z
+	FIELD lastFadeCheck lastFadeCheck J
+	FIELD loading loading Z
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD sequence sequence Ljavax/sound/midi/Sequence;
+	FIELD sequenceQueue sequenceQueue Ljava/util/LinkedList;
+	FIELD sequenceQueueLock sequenceQueueLock Ljava/lang/Object;
+	FIELD sequencer sequencer Ljavax/sound/midi/Sequencer;
+	FIELD SET SET Z
+	FIELD sourcename sourcename Ljava/lang/String;
+	FIELD synthDevice synthDevice Ljavax/sound/midi/MidiDevice;
+	FIELD synthesizer synthesizer Ljavax/sound/midi/Synthesizer;
+	FIELD toLoop toLoop Z
+	FIELD XXX XXX Z
+	METHOD <init> (ZLjava/lang/String;Ljava/lang/String;)V
+		ARG 1 bl
+		ARG 2 string
+		ARG 3 string2
+	METHOD <init> (ZLjava/lang/String;Ljava/net/URL;Ljava/lang/String;)V
+		ARG 1 bl
+		ARG 2 string
+		ARG 3 uRL
+		ARG 4 string2
+	METHOD <init> (ZLjava/lang/String;Lpaulscode/sound/FilenameURL;)V
+		ARG 1 bl
+		ARG 2 string
+		ARG 3 filenameURL
+	METHOD checkFadeOut checkFadeOut ()Z
+	METHOD cleanup cleanup ()V
+	METHOD dequeueSound dequeueSound (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD errorCheck errorCheck (ZLjava/lang/String;)Z
+		ARG 1 bl
+		ARG 2 string
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD fadeOut fadeOut (Lpaulscode/sound/FilenameURL;J)V
+		ARG 1 filenameURL
+		ARG 2 l
+	METHOD fadeOutIn fadeOutIn (Lpaulscode/sound/FilenameURL;JJ)V
+		ARG 1 filenameURL
+		ARG 2 l
+		ARG 4 m
+	METHOD filenameURL filenameURL (ZLpaulscode/sound/FilenameURL;)Lpaulscode/sound/FilenameURL;
+		ARG 1 bl
+		ARG 2 filenameURL
+	METHOD getFilename getFilename ()Ljava/lang/String;
+	METHOD getFilenameURL getFilenameURL ()Lpaulscode/sound/FilenameURL;
+	METHOD getLooping getLooping ()Z
+	METHOD getSequencer getSequencer ()V
+	METHOD getSourcename getSourcename ()Ljava/lang/String;
+	METHOD getSynthesizer getSynthesizer ()V
+	METHOD getVolume getVolume ()F
+	METHOD importantMessage importantMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD incrementSequence incrementSequence ()Z
+	METHOD init init ()V
+	METHOD loading loading ()Z
+	METHOD loading loading (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD message message (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD meta meta (Ljavax/sound/midi/MetaMessage;)V
+		ARG 1 metaMessage
+	METHOD openMidiDevice openMidiDevice (Ljava/lang/String;)Ljavax/sound/midi/MidiDevice;
+		ARG 1 string
+	METHOD openSequencer openSequencer (Ljava/lang/String;)Ljavax/sound/midi/Sequencer;
+		ARG 1 string
+	METHOD pause pause ()V
+	METHOD play play ()V
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;)V
+		ARG 1 exception
+	METHOD queueSound queueSound (Lpaulscode/sound/FilenameURL;)V
+		ARG 1 filenameURL
+	METHOD reset reset ()V
+	METHOD resetGain resetGain ()V
+	METHOD rewind rewind ()V
+	METHOD setFilenameURL setFilenameURL (Lpaulscode/sound/FilenameURL;)V
+		ARG 1 filenameURL
+	METHOD setLooping setLooping (Z)V
+		ARG 1 bl
+	METHOD setSequence setSequence (Ljava/net/URL;)V
+		ARG 1 uRL
+	METHOD setSourcename setSourcename (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD setVolume setVolume (F)V
+		ARG 1 f
+	METHOD sourcename sourcename (ZLjava/lang/String;)Ljava/lang/String;
+		ARG 1 bl
+		ARG 2 string
+	METHOD stop stop ()V
+	METHOD switchSource switchSource (ZLjava/lang/String;Ljava/lang/String;)V
+		ARG 1 bl
+		ARG 2 string
+		ARG 3 string2
+	METHOD switchSource switchSource (ZLjava/lang/String;Ljava/net/URL;Ljava/lang/String;)V
+		ARG 1 bl
+		ARG 2 string
+		ARG 3 uRL
+		ARG 4 string2
+	METHOD switchSource switchSource (ZLjava/lang/String;Lpaulscode/sound/FilenameURL;)V
+		ARG 1 bl
+		ARG 2 string
+		ARG 3 filenameURL
+	METHOD toLoop toLoop (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	CLASS FadeThread

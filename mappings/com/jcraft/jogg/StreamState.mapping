@@ -1,0 +1,5 @@
+CLASS com/jcraft/jogg/StreamState
+	METHOD clear clear ()V
+	METHOD init init (I)V
+	METHOD packetout packetout (Lcom/jcraft/jogg/Packet;)I
+	METHOD pagein pagein (Lcom/jcraft/jogg/Page;)I

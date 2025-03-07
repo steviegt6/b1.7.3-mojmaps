@@ -1,0 +1,15 @@
+CLASS paulscode/sound/StreamThread
+	FIELD listLock listLock Ljava/lang/Object;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD streamingSources streamingSources Ljava/util/List;
+	METHOD errorCheck errorCheck (ZLjava/lang/String;)Z
+		ARG 1 print
+		ARG 2 val
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+		ARG 1 val
+	METHOD importantMessage importantMessage (Ljava/lang/String;)V
+		ARG 1 val
+	METHOD message message (Ljava/lang/String;)V
+		ARG 1 val
+	METHOD watch watch (Lpaulscode/sound/Source;)V
+		ARG 1 source

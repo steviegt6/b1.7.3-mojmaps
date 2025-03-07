@@ -1,0 +1,32 @@
+CLASS paulscode/sound/codecs/CodecWav
+	FIELD endOfStream endOfStream Z
+	FIELD GET GET Z
+	FIELD initialized initialized Z
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD myAudioInputStream myAudioInputStream Ljavax/sound/sampled/AudioInputStream;
+	FIELD SET SET Z
+	FIELD XXX XXX Z
+	METHOD appendByteArrays appendByteArrays ([B[BI)[B
+		ARG 0 bs
+		ARG 1 cs
+		ARG 2 i
+		ARG 4 var4
+		ARG 5 var5
+		ARG 6 var6
+		ARG 7 var7
+	METHOD convertAudioBytes convertAudioBytes ([BZ)[B
+		ARG 0 bs
+		ARG 1 bl
+	METHOD endOfStream endOfStream (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD initialized initialized (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;)V
+		ARG 1 exception
+	METHOD trimArray trimArray ([BI)[B
+		ARG 0 bs
+		ARG 1 i

@@ -1,0 +1,23 @@
+CLASS paulscode/sound/SimpleThread
+	FIELD alive alive Z
+	FIELD GET GET Z
+	FIELD kill kill Z
+	FIELD SET SET Z
+	FIELD XXX XXX Z
+	METHOD alive alive ()Z
+	METHOD alive alive (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD cleanup cleanup ()V
+	METHOD dying dying ()Z
+	METHOD kill kill ()V
+	METHOD kill kill (ZZ)Z
+		ARG 1 bl
+		ARG 2 bl2
+	METHOD rerun rerun ()V
+	METHOD restart restart ()V
+	METHOD run run ()V
+	METHOD snooze snooze (J)V
+		ARG 1 l
+	CLASS 1
+		METHOD run run ()V

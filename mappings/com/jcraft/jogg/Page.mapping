@@ -1,0 +1,4 @@
+CLASS com/jcraft/jogg/Page
+	METHOD eos eos ()I
+	METHOD granulepos granulepos ()J
+	METHOD serialno serialno ()I

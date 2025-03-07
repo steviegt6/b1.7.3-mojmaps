@@ -1,0 +1,18 @@
+CLASS paulscode/sound/CommandThread
+	FIELD className className Ljava/lang/String;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD soundSystem soundSystem Lpaulscode/sound/SoundSystem;
+	METHOD <init> (Lpaulscode/sound/SoundSystem;)V
+		ARG 1 soundSystem
+	METHOD errorCheck errorCheck (ZLjava/lang/String;)Z
+		ARG 1 bl
+		ARG 2 string
+	METHOD errorMessage errorMessage (Ljava/lang/String;I)V
+		ARG 1 string
+		ARG 2 i
+	METHOD importantMessage importantMessage (Ljava/lang/String;I)V
+		ARG 1 string
+		ARG 2 i
+	METHOD message message (Ljava/lang/String;I)V
+		ARG 1 string
+		ARG 2 i

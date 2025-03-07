@@ -1,0 +1,182 @@
+CLASS paulscode/sound/Library
+	FIELD bufferMap bufferMap Ljava/util/HashMap;
+	FIELD listener listener Lpaulscode/sound/ListenerData;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD midiChannel midiChannel Lpaulscode/sound/MidiChannel;
+	FIELD nextNormalChannel nextNormalChannel I
+	FIELD nextStreamingChannel nextStreamingChannel I
+	FIELD normalChannels normalChannels Ljava/util/List;
+	FIELD normalChannelSourceNames normalChannelSourceNames [Ljava/lang/String;
+	FIELD sourceMap sourceMap Ljava/util/HashMap;
+	FIELD streamingChannels streamingChannels Ljava/util/List;
+	FIELD streamingChannelSourceNames streamingChannelSourceNames [Ljava/lang/String;
+	FIELD streamThread streamThread Lpaulscode/sound/StreamThread;
+	METHOD activate activate (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD checkFadeVolumes checkFadeVolumes ()V
+	METHOD cleanup cleanup ()V
+	METHOD copySources copySources (Ljava/util/HashMap;)V
+		ARG 1 hashMap
+	METHOD createChannel createChannel (I)Lpaulscode/sound/Channel;
+		ARG 1 i
+	METHOD cull cull (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD dequeueSound dequeueSound (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 string
+		ARG 2 string2
+	METHOD errorCheck errorCheck (ZLjava/lang/String;)Z
+		ARG 1 bl
+		ARG 2 string
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD fadeOut fadeOut (Ljava/lang/String;Lpaulscode/sound/FilenameURL;J)V
+		ARG 1 string
+		ARG 2 filenameURL
+		ARG 3 l
+	METHOD fadeOutIn fadeOutIn (Ljava/lang/String;Lpaulscode/sound/FilenameURL;JJ)V
+		ARG 1 string
+		ARG 2 filenameURL
+		ARG 3 l
+		ARG 5 m
+	METHOD feedRawAudioData feedRawAudioData (Ljava/lang/String;[B)I
+		ARG 1 string
+		ARG 2 bs
+	METHOD feedRawAudioData feedRawAudioData (Lpaulscode/sound/Source;[B)I
+		ARG 1 source
+		ARG 2 bs
+	METHOD flush flush (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD getClassName getClassName ()Ljava/lang/String;
+	METHOD getDescription getDescription ()Ljava/lang/String;
+	METHOD getListenerData getListenerData ()Lpaulscode/sound/ListenerData;
+	METHOD getMidiChannel getMidiChannel ()Lpaulscode/sound/MidiChannel;
+	METHOD getNextChannel getNextChannel (Lpaulscode/sound/Source;)Lpaulscode/sound/Channel;
+		ARG 1 source
+	METHOD getPitch getPitch (Ljava/lang/String;)F
+		ARG 1 string
+	METHOD getSource getSource (Ljava/lang/String;)Lpaulscode/sound/Source;
+		ARG 1 string
+	METHOD getSources getSources ()Ljava/util/HashMap;
+	METHOD getTitle getTitle ()Ljava/lang/String;
+	METHOD getVolume getVolume (Ljava/lang/String;)F
+		ARG 1 string
+	METHOD importantMessage importantMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD init init ()V
+	METHOD libraryCompatible libraryCompatible ()Z
+	METHOD listenerMoved listenerMoved ()V
+	METHOD loadMidi loadMidi (ZLjava/lang/String;Lpaulscode/sound/FilenameURL;)V
+		ARG 1 bl
+		ARG 2 string
+		ARG 3 filenameURL
+	METHOD loadSound loadSound (Lpaulscode/sound/FilenameURL;)Z
+		ARG 1 filenameURL
+	METHOD message message (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD midiSourcename midiSourcename (Ljava/lang/String;)Z
+		ARG 1 string
+	METHOD moveListener moveListener (FFF)V
+		ARG 1 f
+		ARG 2 g
+		ARG 3 h
+	METHOD newSource newSource (ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;FFFIF)V
+		ARG 1 bl
+		ARG 2 bl2
+		ARG 3 bl3
+		ARG 4 string
+		ARG 5 filenameURL
+		ARG 6 f
+		ARG 7 g
+		ARG 8 h
+		ARG 9 i
+		ARG 10 j
+	METHOD pause pause (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD play play (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD play play (Lpaulscode/sound/Source;)V
+		ARG 1 source
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;)V
+		ARG 1 exception
+	METHOD queueSound queueSound (Ljava/lang/String;Lpaulscode/sound/FilenameURL;)V
+		ARG 1 string
+		ARG 2 filenameURL
+	METHOD quickPlay quickPlay (ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;FFFIFZ)V
+		ARG 1 bl
+		ARG 2 bl2
+		ARG 3 bl3
+		ARG 4 string
+		ARG 5 filenameURL
+		ARG 6 f
+		ARG 7 g
+		ARG 8 h
+		ARG 9 i
+		ARG 10 j
+		ARG 11 bl4
+	METHOD rawDataStream rawDataStream (Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+		ARG 1 audioFormat
+		ARG 2 bl
+		ARG 3 string
+		ARG 4 f
+		ARG 5 g
+		ARG 6 h
+		ARG 7 i
+		ARG 8 j
+	METHOD removeSource removeSource (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD removeTemporarySources removeTemporarySources ()V
+	METHOD replaySources replaySources ()V
+	METHOD rewind rewind (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD setAttenuation setAttenuation (Ljava/lang/String;I)V
+		ARG 1 string
+		ARG 2 i
+	METHOD setDistOrRoll setDistOrRoll (Ljava/lang/String;F)V
+		ARG 1 string
+		ARG 2 f
+	METHOD setListenerAngle setListenerAngle (F)V
+		ARG 1 f
+	METHOD setListenerData setListenerData (Lpaulscode/sound/ListenerData;)V
+		ARG 1 listenerData
+	METHOD setListenerOrientation setListenerOrientation (FFFFFF)V
+		ARG 1 f
+		ARG 2 g
+		ARG 3 h
+		ARG 4 i
+		ARG 5 j
+		ARG 6 k
+	METHOD setListenerPosition setListenerPosition (FFF)V
+		ARG 1 f
+		ARG 2 g
+		ARG 3 h
+	METHOD setLooping setLooping (Ljava/lang/String;Z)V
+		ARG 1 string
+		ARG 2 bl
+	METHOD setMasterVolume setMasterVolume (F)V
+		ARG 1 f
+	METHOD setMidiChannel setMidiChannel (Lpaulscode/sound/MidiChannel;)V
+		ARG 1 midiChannel
+	METHOD setPitch setPitch (Ljava/lang/String;F)V
+		ARG 1 string
+		ARG 2 f
+	METHOD setPosition setPosition (Ljava/lang/String;FFF)V
+		ARG 1 string
+		ARG 2 f
+		ARG 3 g
+		ARG 4 h
+	METHOD setPriority setPriority (Ljava/lang/String;Z)V
+		ARG 1 string
+		ARG 2 bl
+	METHOD setTemporary setTemporary (Ljava/lang/String;Z)V
+		ARG 1 string
+		ARG 2 bl
+	METHOD setVolume setVolume (Ljava/lang/String;F)V
+		ARG 1 string
+		ARG 2 f
+	METHOD stop stop (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD turnListener turnListener (F)V
+		ARG 1 f
+	METHOD unloadMidi unloadMidi ()V
+	METHOD unloadSound unloadSound (Ljava/lang/String;)V
+		ARG 1 string

@@ -1,0 +1,7 @@
+CLASS com/jcraft/jogg/SyncState
+	FIELD data data [B
+	METHOD buffer buffer (I)I
+	METHOD clear clear ()I
+	METHOD init init ()V
+	METHOD pageout pageout (Lcom/jcraft/jogg/Page;)I
+	METHOD wrote wrote (I)I

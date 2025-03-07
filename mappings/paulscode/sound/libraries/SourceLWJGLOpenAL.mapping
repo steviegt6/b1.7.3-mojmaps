@@ -1,0 +1,56 @@
+CLASS paulscode/sound/libraries/SourceLWJGLOpenAL
+	FIELD channelOpenAL channelOpenAL Lpaulscode/sound/libraries/ChannelLWJGLOpenAL;
+	FIELD listenerPosition listenerPosition Ljava/nio/FloatBuffer;
+	FIELD myBuffer myBuffer Ljava/nio/IntBuffer;
+	FIELD sourcePosition sourcePosition Ljava/nio/FloatBuffer;
+	FIELD sourceVelocity sourceVelocity Ljava/nio/FloatBuffer;
+	METHOD <init> (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Lpaulscode/sound/Source;Lpaulscode/sound/SoundBuffer;)V
+		ARG 1 floatBuffer
+		ARG 2 intBuffer
+		ARG 3 source
+		ARG 4 soundBuffer
+	METHOD <init> (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+		ARG 1 floatBuffer
+		ARG 2 intBuffer
+		ARG 3 bl
+		ARG 4 bl2
+		ARG 5 bl3
+		ARG 6 string
+		ARG 7 filenameURL
+		ARG 8 soundBuffer
+		ARG 9 f
+		ARG 10 g
+		ARG 11 h
+		ARG 12 i
+		ARG 13 j
+		ARG 14 bl4
+	METHOD <init> (Ljava/nio/FloatBuffer;Ljavax/sound/sampled/AudioFormat;ZLjava/lang/String;FFFIF)V
+		ARG 1 floatBuffer
+		ARG 2 audioFormat
+		ARG 3 bl
+		ARG 4 string
+		ARG 5 f
+		ARG 6 g
+		ARG 7 h
+		ARG 8 i
+		ARG 9 j
+	METHOD calculateDistance calculateDistance ()V
+	METHOD calculateGain calculateGain ()V
+	METHOD changeSource changeSource (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+		ARG 1 floatBuffer
+		ARG 2 intBuffer
+		ARG 3 bl
+		ARG 4 bl2
+		ARG 5 bl3
+		ARG 6 string
+		ARG 7 filenameURL
+		ARG 8 soundBuffer
+		ARG 9 f
+		ARG 10 g
+		ARG 11 h
+		ARG 12 i
+		ARG 13 j
+		ARG 14 bl4
+	METHOD checkALError checkALError ()Z
+	METHOD checkPitch checkPitch ()V
+	METHOD resetALInformation resetALInformation ()V

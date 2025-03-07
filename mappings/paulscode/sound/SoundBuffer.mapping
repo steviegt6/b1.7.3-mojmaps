@@ -1,0 +1,9 @@
+CLASS paulscode/sound/SoundBuffer
+	FIELD audioData audioData [B
+	FIELD audioFormat audioFormat Ljavax/sound/sampled/AudioFormat;
+	METHOD <init> ([BLjavax/sound/sampled/AudioFormat;)V
+		ARG 1 bs
+		ARG 2 audioFormat
+	METHOD cleanup cleanup ()V
+	METHOD trimData trimData (I)V
+		ARG 1 i

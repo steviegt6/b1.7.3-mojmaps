@@ -1,0 +1,15 @@
+CLASS paulscode/sound/FilenameURL
+	FIELD filename filename Ljava/lang/String;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD url url Ljava/net/URL;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD <init> (Ljava/net/URL;Ljava/lang/String;)V
+		ARG 1 uRL
+		ARG 2 string
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD getFilename getFilename ()Ljava/lang/String;
+	METHOD getURL getURL ()Ljava/net/URL;
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;)V
+		ARG 1 exception
