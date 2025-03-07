@@ -1,0 +1,10 @@
+CLASS argo/jdom/JsonNodeBuilders
+	METHOD aFalseBuilder aFalseBuilder ()Largo/jdom/JsonNodeBuilder;
+	METHOD anArrayBuilder anArrayBuilder ()Largo/jdom/JsonArrayNodeBuilder;
+	METHOD anObjectBuilder anObjectBuilder ()Largo/jdom/JsonObjectNodeBuilder;
+	METHOD aNullBuilder aNullBuilder ()Largo/jdom/JsonNodeBuilder;
+	METHOD aNumberBuilder aNumberBuilder (Ljava/lang/String;)Largo/jdom/JsonNodeBuilder;
+		ARG 0 string
+	METHOD aStringBuilder aStringBuilder (Ljava/lang/String;)Largo/jdom/JsonStringNodeBuilder;
+		ARG 0 string
+	METHOD aTrueBuilder aTrueBuilder ()Largo/jdom/JsonNodeBuilder;

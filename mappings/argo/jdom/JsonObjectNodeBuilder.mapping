@@ -1,0 +1,4 @@
+CLASS argo/jdom/JsonObjectNodeBuilder
+	FIELD fieldBuilders fieldBuilders Ljava/util/List;
+	METHOD withFieldBuilder withFieldBuilder (Largo/jdom/JsonFieldBuilder;)Largo/jdom/JsonObjectNodeBuilder;
+		ARG 1 jsonFieldBuilder

@@ -1,0 +1,7 @@
+CLASS argo/format/CompactJsonFormatter
+	METHOD format format (Largo/jdom/JsonRootNode;Ljava/io/Writer;)V
+		ARG 1 jsonRootNode
+		ARG 2 writer
+	METHOD formatJsonNode formatJsonNode (Largo/jdom/JsonNode;Ljava/io/Writer;)V
+		ARG 1 jsonNode
+		ARG 2 writer

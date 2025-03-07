@@ -1,0 +1,10 @@
+CLASS argo/jdom/JsonFieldBuilder
+	FIELD keyBuilder keyBuilder Largo/jdom/JsonNodeBuilder;
+	FIELD valueBuilder valueBuilder Largo/jdom/JsonNodeBuilder;
+	METHOD aJsonFieldBuilder aJsonFieldBuilder ()Largo/jdom/JsonFieldBuilder;
+	METHOD buildKey buildKey ()Largo/jdom/JsonStringNode;
+	METHOD buildValue buildValue ()Largo/jdom/JsonNode;
+	METHOD withKey withKey (Largo/jdom/JsonNodeBuilder;)Largo/jdom/JsonFieldBuilder;
+		ARG 1 jsonNodeBuilder
+	METHOD withValue withValue (Largo/jdom/JsonNodeBuilder;)Largo/jdom/JsonFieldBuilder;
+		ARG 1 jsonNodeBuilder

@@ -1,0 +1,11 @@
+CLASS argo/jdom/JsonNodeSelector
+	FIELD valueGetter valueGetter Largo/jdom/Functor;
+	METHOD <init> (Largo/jdom/Functor;)V
+		ARG 1 functor
+	METHOD getValue getValue (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 object
+	METHOD matches matches (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD shortForm shortForm ()Ljava/lang/String;
+	METHOD with with (Largo/jdom/JsonNodeSelector;)Largo/jdom/JsonNodeSelector;
+		ARG 1 jsonNodeSelector

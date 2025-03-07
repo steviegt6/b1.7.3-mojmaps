@@ -1,0 +1,16 @@
+CLASS argo/saj/PositionTrackingPushbackReader
+	FIELD characterCount characterCount I
+	FIELD lastCharacterWasCarriageReturn lastCharacterWasCarriageReturn Z
+	FIELD lineCount lineCount I
+	FIELD pushbackReader pushbackReader Ljava/io/PushbackReader;
+	METHOD <init> (Ljava/io/Reader;)V
+		ARG 1 reader
+	METHOD read read ()I
+	METHOD read read ([C)I
+		ARG 1 cs
+	METHOD uncount uncount ([C)V
+		ARG 1 cs
+	METHOD unread unread (C)V
+		ARG 1 c
+	METHOD updateCharacterAndLineCounts updateCharacterAndLineCounts (I)V
+		ARG 1 i

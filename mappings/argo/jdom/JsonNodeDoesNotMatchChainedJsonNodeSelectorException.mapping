@@ -1,0 +1,16 @@
+CLASS argo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException
+	FIELD failedNode failedNode Largo/jdom/Functor;
+	FIELD failPath failPath Ljava/util/List;
+	METHOD <init> (Largo/jdom/Functor;Ljava/util/List;)V
+		ARG 1 functor
+		ARG 2 list
+	METHOD createChainedJsonNodeDoesNotMatchJsonNodeSelectorException createChainedJsonNodeDoesNotMatchJsonNodeSelectorException (Largo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException;Largo/jdom/JsonNodeSelector;)Largo/jdom/JsonNodeDoesNotMatchJsonNodeSelectorException;
+		ARG 0 jsonNodeDoesNotMatchChainedJsonNodeSelectorException
+		ARG 1 jsonNodeSelector
+	METHOD createJsonNodeDoesNotMatchJsonNodeSelectorException createJsonNodeDoesNotMatchJsonNodeSelectorException (Largo/jdom/Functor;)Largo/jdom/JsonNodeDoesNotMatchJsonNodeSelectorException;
+		ARG 0 functor
+	METHOD createUnchainedJsonNodeDoesNotMatchJsonNodeSelectorException createUnchainedJsonNodeDoesNotMatchJsonNodeSelectorException (Largo/jdom/JsonNodeDoesNotMatchChainedJsonNodeSelectorException;Largo/jdom/JsonNodeSelector;)Largo/jdom/JsonNodeDoesNotMatchJsonNodeSelectorException;
+		ARG 0 jsonNodeDoesNotMatchChainedJsonNodeSelectorException
+		ARG 1 jsonNodeSelector
+	METHOD getShortFormFailPath getShortFormFailPath (Ljava/util/List;)Ljava/lang/String;
+		ARG 0 list

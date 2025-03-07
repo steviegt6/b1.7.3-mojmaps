@@ -1,0 +1,6 @@
+CLASS argo/jdom/ChainedFunctor
+	FIELD childJsonNodeSelector childJsonNodeSelector Largo/jdom/JsonNodeSelector;
+	FIELD parentJsonNodeSelector parentJsonNodeSelector Largo/jdom/JsonNodeSelector;
+	METHOD <init> (Largo/jdom/JsonNodeSelector;Largo/jdom/JsonNodeSelector;)V
+		ARG 1 jsonNodeSelector
+		ARG 2 jsonNodeSelector2

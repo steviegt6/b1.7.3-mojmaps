@@ -1,0 +1,13 @@
+CLASS argo/jdom/JsonListenerToJdomAdapter
+	FIELD root root Largo/jdom/JsonNodeBuilder;
+	FIELD stack stack Ljava/util/Stack;
+	METHOD addRootNode addRootNode (Largo/jdom/JsonNodeBuilder;)V
+		ARG 1 jsonNodeBuilder
+	METHOD addValue addValue (Largo/jdom/JsonNodeBuilder;)V
+		ARG 1 jsonNodeBuilder
+	METHOD getDocument getDocument ()Largo/jdom/JsonRootNode;
+	CLASS NodeContainer
+		METHOD addField addField (Largo/jdom/JsonFieldBuilder;)V
+			ARG 1 jsonFieldBuilder
+		METHOD addNode addNode (Largo/jdom/JsonNodeBuilder;)V
+			ARG 1 jsonNodeBuilder

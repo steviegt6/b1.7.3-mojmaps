@@ -1,0 +1,6 @@
+CLASS argo/jdom/Functor
+	METHOD applyTo applyTo (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 object
+	METHOD matchesNode matchesNode (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD shortForm shortForm ()Ljava/lang/String;

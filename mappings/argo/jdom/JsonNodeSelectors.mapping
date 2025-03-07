@@ -1,0 +1,23 @@
+CLASS argo/jdom/JsonNodeSelectors
+	METHOD aField aField (Largo/jdom/JsonStringNode;)Largo/jdom/JsonNodeSelector;
+		ARG 0 jsonStringNode
+	METHOD aField aField (Ljava/lang/String;)Largo/jdom/JsonNodeSelector;
+		ARG 0 string
+	METHOD anArrayNode anArrayNode ([Ljava/lang/Object;)Largo/jdom/JsonNodeSelector;
+		ARG 0 objects
+	METHOD anArrayNodeWithElement anArrayNodeWithElement (I)Largo/jdom/JsonNodeSelector;
+		ARG 0 i
+	METHOD anElement anElement (I)Largo/jdom/JsonNodeSelector;
+		ARG 0 i
+	METHOD anObjectNode anObjectNode ([Ljava/lang/Object;)Largo/jdom/JsonNodeSelector;
+		ARG 0 objects
+	METHOD anObjectNodeWithField anObjectNodeWithField (Ljava/lang/String;)Largo/jdom/JsonNodeSelector;
+		ARG 0 string
+	METHOD aStringNode aStringNode ([Ljava/lang/Object;)Largo/jdom/JsonNodeSelector;
+		ARG 0 objects
+	METHOD chainedJsonNodeSelector chainedJsonNodeSelector (Largo/jdom/JsonNodeSelector;Largo/jdom/JsonNodeSelector;)Largo/jdom/JsonNodeSelector;
+		ARG 0 jsonNodeSelector
+		ARG 1 jsonNodeSelector2
+	METHOD chainOn chainOn ([Ljava/lang/Object;Largo/jdom/JsonNodeSelector;)Largo/jdom/JsonNodeSelector;
+		ARG 0 objects
+		ARG 1 jsonNodeSelector

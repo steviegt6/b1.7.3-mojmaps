@@ -1,0 +1,14 @@
+CLASS argo/jdom/JsonNodeFactories
+	METHOD aJsonArray aJsonArray ([Largo/jdom/JsonNode;)Largo/jdom/JsonRootNode;
+		ARG 0 jsonNodes
+	METHOD aJsonArray aJsonArray (Ljava/lang/Iterable;)Largo/jdom/JsonRootNode;
+		ARG 0 iterable
+	METHOD aJsonFalse aJsonFalse ()Largo/jdom/JsonNode;
+	METHOD aJsonNull aJsonNull ()Largo/jdom/JsonNode;
+	METHOD aJsonNumber aJsonNumber (Ljava/lang/String;)Largo/jdom/JsonNode;
+		ARG 0 string
+	METHOD aJsonObject aJsonObject (Ljava/util/Map;)Largo/jdom/JsonRootNode;
+		ARG 0 map
+	METHOD aJsonString aJsonString (Ljava/lang/String;)Largo/jdom/JsonStringNode;
+		ARG 0 string
+	METHOD aJsonTrue aJsonTrue ()Largo/jdom/JsonNode;

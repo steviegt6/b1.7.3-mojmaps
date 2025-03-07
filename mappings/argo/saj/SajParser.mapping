@@ -1,0 +1,40 @@
+CLASS argo/saj/SajParser
+	METHOD aFieldToken aFieldToken (Largo/saj/PositionTrackingPushbackReader;Largo/saj/JsonListener;)V
+		ARG 1 positionTrackingPushbackReader
+		ARG 2 jsonListener
+	METHOD aJsonValue aJsonValue (Largo/saj/PositionTrackingPushbackReader;Largo/saj/JsonListener;)V
+		ARG 1 positionTrackingPushbackReader
+		ARG 2 jsonListener
+	METHOD arrayString arrayString (Largo/saj/PositionTrackingPushbackReader;Largo/saj/JsonListener;)V
+		ARG 1 positionTrackingPushbackReader
+		ARG 2 jsonListener
+	METHOD digitString digitString (Largo/saj/PositionTrackingPushbackReader;)Ljava/lang/String;
+		ARG 1 positionTrackingPushbackReader
+	METHOD digitToken digitToken (Largo/saj/PositionTrackingPushbackReader;)C
+		ARG 1 positionTrackingPushbackReader
+	METHOD escapedStringChar escapedStringChar (Largo/saj/PositionTrackingPushbackReader;)C
+		ARG 1 positionTrackingPushbackReader
+	METHOD hexidecimalNumber hexidecimalNumber (Largo/saj/PositionTrackingPushbackReader;)I
+		ARG 1 positionTrackingPushbackReader
+	METHOD nonNegativeNumberToken nonNegativeNumberToken (Largo/saj/PositionTrackingPushbackReader;)Ljava/lang/String;
+		ARG 1 positionTrackingPushbackReader
+	METHOD nonZeroDigitToken nonZeroDigitToken (Largo/saj/PositionTrackingPushbackReader;)C
+		ARG 1 positionTrackingPushbackReader
+	METHOD numberToken numberToken (Largo/saj/PositionTrackingPushbackReader;)Ljava/lang/String;
+		ARG 1 positionTrackingPushbackReader
+	METHOD objectString objectString (Largo/saj/PositionTrackingPushbackReader;Largo/saj/JsonListener;)V
+		ARG 1 positionTrackingPushbackReader
+		ARG 2 jsonListener
+	METHOD parse parse (Ljava/io/Reader;Largo/saj/JsonListener;)V
+		ARG 1 reader
+		ARG 2 jsonListener
+	METHOD possibleExponent possibleExponent (Largo/saj/PositionTrackingPushbackReader;)Ljava/lang/String;
+		ARG 1 positionTrackingPushbackReader
+	METHOD possibleFractionalComponent possibleFractionalComponent (Largo/saj/PositionTrackingPushbackReader;)Ljava/lang/String;
+		ARG 1 positionTrackingPushbackReader
+	METHOD possibleSign possibleSign (Largo/saj/PositionTrackingPushbackReader;)Ljava/lang/String;
+		ARG 1 positionTrackingPushbackReader
+	METHOD readNextNonWhitespaceChar readNextNonWhitespaceChar (Largo/saj/PositionTrackingPushbackReader;)I
+		ARG 1 positionTrackingPushbackReader
+	METHOD stringToken stringToken (Largo/saj/PositionTrackingPushbackReader;)Ljava/lang/String;
+		ARG 1 positionTrackingPushbackReader

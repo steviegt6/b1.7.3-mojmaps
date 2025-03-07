@@ -1,0 +1,5 @@
+CLASS argo/jdom/JdomParser
+	METHOD parse parse (Ljava/io/Reader;)Largo/jdom/JsonRootNode;
+		ARG 1 reader
+	METHOD parse parse (Ljava/lang/String;)Largo/jdom/JsonRootNode;
+		ARG 1 string

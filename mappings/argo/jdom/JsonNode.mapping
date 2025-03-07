@@ -1,0 +1,13 @@
+CLASS argo/jdom/JsonNode
+	METHOD getArrayNode getArrayNode ([Ljava/lang/Object;)Ljava/util/List;
+		ARG 1 objects
+	METHOD getElements getElements ()Ljava/util/List;
+	METHOD getFields getFields ()Ljava/util/Map;
+	METHOD getStringValue getStringValue ([Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 objects
+	METHOD getText getText ()Ljava/lang/String;
+	METHOD getType getType ()Largo/jdom/JsonNodeType;
+	METHOD wrapExceptionsFor wrapExceptionsFor (Largo/jdom/JsonNodeSelector;Largo/jdom/JsonNode;[Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 jsonNodeSelector
+		ARG 2 jsonNode
+		ARG 3 objects

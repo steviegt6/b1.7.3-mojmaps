@@ -1,0 +1,7 @@
+CLASS argo/jdom/JsonConstants
+	FIELD FALSE FALSE Largo/jdom/JsonConstants;
+	FIELD jsonNodeType jsonNodeType Largo/jdom/JsonNodeType;
+	FIELD NULL NULL Largo/jdom/JsonConstants;
+	FIELD TRUE TRUE Largo/jdom/JsonConstants;
+	METHOD <init> (Largo/jdom/JsonNodeType;)V
+		ARG 1 jsonNodeType

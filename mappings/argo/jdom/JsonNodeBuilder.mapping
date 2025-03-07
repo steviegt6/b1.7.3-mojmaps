@@ -1,0 +1,2 @@
+CLASS argo/jdom/JsonNodeBuilder
+	METHOD build build ()Largo/jdom/JsonNode;
