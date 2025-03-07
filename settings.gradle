@@ -9,9 +9,8 @@ pluginManagement {
 	}
 }
 
-// This check is done here before any plugins that may require java 17 are able to load.
 if (!JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
 	throw new UnsupportedOperationException("Yarn's buildscript requires Java 17 or higher.")
 }
 
-rootProject.name = "biny"
+rootProject.name = "b1.7.3-mojmaps"
